@@ -1,0 +1,198 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 50px);
+}
+
+.planetDescription {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 880px) {
+    .planetDescription {
+        flex-direction: column;
+    }
+}
+
+.planetDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+@media screen and (max-width: 880px) {
+    .planetDesc {
+        flex-direction: row;
+        align-items: center;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .planetDesc {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+
+.descriptionTexts {
+    width: 80%;
+}
+
+.planetTitle {
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 104px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.source {
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+
+}
+
+.descriptionButtons {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.descriptionButton {
+    color: white;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    outline: none;
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 2.57143px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.descriptionButton:hover {
+    background-color: #5b5b5b !important;
+}
+
+.mobileDescriptionButtons {
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 10px;
+}
+
+.mobileDescriptionButton {
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 10px;
+    text-align: center;
+    letter-spacing: 1.92857px;
+    text-transform: uppercase;
+
+    width: 100%;
+    padding: 20px;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    text-align: center;
+    letter-spacing: 1.92857px;
+    text-transform: uppercase;
+    mix-blend-mode: normal;
+}
+
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 550px) {
+    .details {
+        flex-direction: column;
+    }
+}
+
+.detailField {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 30px;
+
+}
+
+.detailFieldName {
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+
+}
+
+.detailValue {
+    font-size: 30px;
+    line-height: 52px;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 880px) {
+    .detailField {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .detailValue {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .detailField {
+        margin: 10px;
+        padding: 10px;
+        width: auto !important;
+    }
+
+    .detailValue {
+        font-size: 20px;
+    }
+}

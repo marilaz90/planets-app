@@ -1,0 +1,43 @@
+.planetMenu {
+    display: flex;
+}
+
+@media screen and (max-width: 550px) {
+    .planetMenu {
+        flex-direction: column;
+    }
+}
+
+.menu-icon {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.menu-icon.visible-mobile {
+    display: none;
+    /* Hide the menu icon by default */
+}
+
+.menuButton {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.menuContainer {
+    width: 100vw;
+    height: 100vh;
+    background: #070724;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
