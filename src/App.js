@@ -32,7 +32,7 @@ function App() {
     try {
       const response = await axios.get(`${apiUrl}/api/planets`);
       setPlanets(response.data);
-      setSelectedPlanet(response.data[0]);
+      selectPlanet(response.data[0].id);
     } catch (error) {
       console.error("Error fetching planets:", error);
     }
