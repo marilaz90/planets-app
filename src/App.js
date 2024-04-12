@@ -8,7 +8,7 @@ function App() {
   const [selectedPlanet, setSelectedPlanet] = useState(null);
   const [isMobileView, setMobileView] = useState(false);
 
-  const apiUrl = "http://localhost:5000";
+  const apiUrl = "https://planets-app-api.vercel.app";
 
   useEffect(() => {
     fetchPlanets();
